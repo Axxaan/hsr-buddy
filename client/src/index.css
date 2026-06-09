@@ -52,12 +52,7 @@
 
 body {
   margin: 0;
-  background:
-    radial-gradient(ellipse at 15% 50%, rgba(88, 28, 135, 0.35) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 15%, rgba(30, 58, 138, 0.45) 0%, transparent 50%),
-    radial-gradient(ellipse at 55% 85%, rgba(67, 10, 100, 0.3) 0%, transparent 50%),
-    linear-gradient(160deg, #04020e 0%, #0a0520 45%, #060d26 75%, #030109 100%);
-  background-attachment: fixed;
+  background: url('/bg.png') center center / cover no-repeat fixed;
   min-height: 100vh;
 }
 
@@ -71,7 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background: rgba(8, 4, 18, 0.45);
+  background: rgba(8, 4, 18, 0.30);
 }
 
 h1,
