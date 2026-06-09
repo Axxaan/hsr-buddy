@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background: rgba(8, 4, 18, 0.78);
+  background: rgba(8, 4, 18, 0.45);
 }
 
 h1,
