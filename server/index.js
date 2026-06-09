@@ -103,8 +103,13 @@ function formatRosterSummary() {
 const BASE_SYSTEM_PROMPT =
   "You are an HSR team-building advisor. Help players optimize their team compositions and relic builds. Explain things clearly for average players.";
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.CLIENT_URL,
+].filter(Boolean);
+
 const app = express();
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
@@ -139,4 +144,5 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-app.listen(3001, () => console.log("Proxy server running on port 3001"));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`Proxy server running on port ${PORT}`));
