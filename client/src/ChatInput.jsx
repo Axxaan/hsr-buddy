@@ -25,7 +25,7 @@ function ChatInput({ onSend, isLoading }) {
         value={value}
         onChange={e => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder="Message Claude..."
+        placeholder="Message Pom-Pom..."
         disabled={isLoading}
       />
       <button

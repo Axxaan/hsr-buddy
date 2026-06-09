@@ -33,8 +33,11 @@
   border-radius: 16px;
   font-size: 16px;
   line-height: 1.5;
-  white-space: pre-wrap;
   word-break: break-word;
+}
+
+.message--user .message-bubble {
+  white-space: pre-wrap;
 }
 
 .message--user .message-bubble {
@@ -58,7 +61,73 @@
   display: flex;
   gap: 8px;
   padding: 16px 20px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(140, 70, 220, 0.25);
+  background: rgba(8, 4, 18, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Markdown prose inside assistant bubbles */
+.message--assistant .message-bubble p {
+  margin: 0 0 8px;
+}
+.message--assistant .message-bubble p:last-child {
+  margin-bottom: 0;
+}
+.message--assistant .message-bubble ul,
+.message--assistant .message-bubble ol {
+  margin: 6px 0;
+  padding-left: 20px;
+}
+.message--assistant .message-bubble li {
+  margin: 3px 0;
+}
+.message--assistant .message-bubble h1,
+.message--assistant .message-bubble h2,
+.message--assistant .message-bubble h3 {
+  margin: 10px 0 6px;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--accent);
+}
+.message--assistant .message-bubble h1 { font-size: 1.1em; }
+.message--assistant .message-bubble strong {
+  color: var(--text-h);
+  font-weight: 600;
+}
+.message--assistant .message-bubble table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 14px;
+}
+.message--assistant .message-bubble th,
+.message--assistant .message-bubble td {
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+  text-align: left;
+}
+.message--assistant .message-bubble th {
+  background: rgba(192, 132, 252, 0.1);
+  color: var(--text-h);
+}
+.message--assistant .message-bubble code {
+  font-size: 13px;
+  padding: 2px 5px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  display: inline;
+}
+.message--assistant .message-bubble pre {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 14px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+.message--assistant .message-bubble pre code {
+  background: none;
+  padding: 0;
+  font-size: 13px;
 }
 
 .chat-input__field {
