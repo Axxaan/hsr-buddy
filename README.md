@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://i.pinimg.com/736x/9a/d1/f9/9ad1f90c20367df906dc8fb9a93c4e2d.jpg" width="220" alt="Pom-Pom happy" />
+<img src="https://static.wikia.nocookie.net/houkai-star-rail/images/5/53/Sticker_PPG_07_Pom-Pom_12.png/revision/latest?cb=20230717183717" width="220" alt="Pom-Pom happy" />
 
 # 🚂 Pom-Pom
 
-> <img src="https://i.pinimg.com/736x/1c/54/68/1c5468ee0a6dfb942163409e1a3ebbc3.jpg" width="120" align="left" alt="Pom-Pom embarrassed" /> *"Not to brag or anything, but Pom-Pom knows every passenger on this train!"* 🐾
+> <img src="https://static.wikia.nocookie.net/houkai-star-rail/images/3/31/Sticker_PPG_07_Pom-Pom_03.png/revision/latest?cb=20230717183713" width="120" align="left" alt="Pom-Pom embarrassed" /> *"Not to brag or anything, but Pom-Pom knows every passenger on this train!"* 🐾
 
 <br/>
 
@@ -17,7 +17,7 @@ A web app for Honkai Star Rail players to get team building and relic advice thr
 
 ---
 
-## <img src="https://i.pinimg.com/736x/08/76/95/087695e76226c12c1fb4bfd6db4346e0.jpg" width="80" align="center" alt="Pom-Pom question" /> What it does
+## <img src="https://static.wikia.nocookie.net/houkai-star-rail/images/7/73/Sticker_PPG_07_Pom-Pom_07.png/revision/latest?cb=20230717183711" width="80" align="center" alt="Pom-Pom confused" /> What it does
 
 You type in a question like *"I have Acheron and Mortenax Blade, who should I run with them?"* and Pom-Pom gives you a breakdown of team compositions, relic sets, and playstyle tips. It knows the current roster and pulls in relevant character data based on what you ask about.
 
@@ -34,7 +34,7 @@ You type in a question like *"I have Acheron and Mortenax Blade, who should I ru
 
 ---
 
-## <img src="https://i.pinimg.com/736x/5f/89/59/5f895945aeaaa109c753c5c4e55c5693.jpg" width="80" align="center" alt="Pom-Pom teaching" /> How it works
+## <img src="https://static.wikia.nocookie.net/houkai-star-rail/images/c/c8/Sticker_PPG_07_Pom-Pom_09.png/revision/latest?cb=20250725220422" width="80" align="center" alt="Pom-Pom teaching" /> How it works
 
 The React frontend sends your message to an Express proxy server, which injects relevant HSR character data into the prompt before forwarding it to the Claude API. The proxy keeps the API key secure server-side and handles CORS between the two deployed services.
 
